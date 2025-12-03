@@ -1,0 +1,25 @@
+Loading datasets...
+Bays columns: ['RoadSegmentID', 'KerbsideID', 'RoadSegmentDescription', 'Latitude', 'Longitude', 'LastUpdated', 'Location']
+Sensors columns: ['Lastupdated', 'Status_Timestamp', 'Zone_Number', 'Status_Description', 'KerbsideID', 'Location']
+
+--- KerbsideID Analysis ---
+Total bays rows: 23864
+Bays with KerbsideID: 5339
+Unique KerbsideIDs in bays: 5326
+
+Total sensor readings: 3309
+Sensors with KerbsideID: 3309
+Unique KerbsideIDs in sensors: 3309
+
+Common KerbsideIDs: 3209
+Sensor IDs NOT in bays file: 100
+Example missing IDs (first 5): ['18111', '53223', '10887', '10889', '10904']
+
+--- Duplicates in Bays ---
+Duplicate KerbsideIDs found in bays: 26
+      KerbsideID                             RoadSegmentDescription
+5903       17212  Berkeley Street between Queensberry Street and...
+656        17212  Wellington Parade South between Wellington Cre...
+2682       17242  Berkeley Street between Queensberry Street and...
+654        17242  Wellington Parade South between Wellington Cre...
+21905      17244  Berkeley Street between Queensberry Street and...
