@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 
 # Config - Using Transaction Pooler (IPv4)
 DB_USER = "postgres.prwbzhkabpclahzaaffi"  # Format: postgres.{project-ref}
-DB_PASS = ""
+DB_PASS = "rDDXVckv2lpzlwBh"
 DB_HOST = "aws-1-ap-south-1.pooler.supabase.com"  # Transaction Pooler
 DB_PORT = "6543"  # Pooler port
 DB_NAME = "postgres"
@@ -11,7 +11,8 @@ DB_NAME = "postgres"
 OUTPUT_PATH = "data/supabase_snapshots.csv"
 
 def extract_data():
-    connection_url = f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}?sslmode=require"
+    connection_url = f"postgresql+psycopg://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}?sslmode=require"
+
     
     print(f"Connecting to Supabase Pooler: {DB_HOST}:{DB_PORT}...")
     try:
