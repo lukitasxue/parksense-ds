@@ -1,0 +1,1 @@
+group_id,occupancy_ratio,hour,day_of_week,lag_15m,lag_30m
